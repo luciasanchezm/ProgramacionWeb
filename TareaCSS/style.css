@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* VARIABLES */
+:root {
+	--gray: rgb(230, 230, 230);
+	--primary-color: #d31c73;
+	--secondary-color: #5E84B2;
+	--orange-color: #E5A125;
+    --green-color: #BCE0AE
+	--default-radius: 16px;
+	--default-margin: 16px;
+}
+/* VARIABLES */
+
+/* ================================ RESET ================================ */
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 1024px; 
+    margin: 0 auto;
+    opacity: 0;
+    animation: fade 1s forwards;
+}
+
+/* ================================ HEADER ================================ */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 80%;
+    display: inline-block;
+    justify-content: flex-end;
+    border-bottom: 2px solid #d31c73;
+}
+
+nav ul {
+    padding: 0;
+    width: 80%;
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    width: 220px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav ul li:hover {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    width: 4px;
+    height: 32px;
+    background-color: #d31c73;
+}
+
+/*=============================== CLASES REUTILIZABLES ==============================*/ 
+
+.flex {
+    display: flex;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.right {
+    justify-content: flex-end;
+    text-align: end;
+}
+
+/*=============================== CLASES  ==============================*/ 
+
+.logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    height: 100px;
+    width: 100px;
+    transform: translateX(-150px);
+    animation: slide 1s 1s forwards;
+    animation-timing-function: cubic-bezier(1,-1.12,.01,1.88);
+}
+
+.image {
+    height: 400px;
+    width: 400px;
+    border-radius: 670px;
+    border: 4px solid #E5A125;
+    transition: .4s;
+}
+
+.image:hover {
+    box-shadow: 0 0 16px 16px #B5B5B5;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 600;
+    color: #5E84B2;
+    margin: 0;
+    text-align: center;
+    line-height: 72px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #d31c73;
+    margin: 0;
+    text-align: center;
+}
+
+.texts {
+    max-width: 350px;
+    justify-content: center;
+}
+
+.text {
+   font-size: 12px;
+   margin: 0;
+   line-height: 14px;
+}
+
+.text-big {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.text-green {
+    color: #BCE0AE;
+    margin: 0;
+    font-size: 11px;
+}
+
+/* ================================ HEADER ================================ */
+
+footer {
+background-color: #d31c73;
+color: #FFF;
+display: flex;
+align-items: center;
+padding: 16px 32px 16px 32px;
+width: 100%;
+position: fixed;
+bottom: 0;
+left: 0;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes slide {
+    to {
+        transform: unset;
+    }
+}

@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* VARIABLES */
+:root {
+	--gray: rgb(230, 230, 230);
+	--primary-color: #056ebf;
+	--primary-light-color: #cfe1eb;
+	--accent-color: #7fbb75;
+	--accent-light-color: #9ec497;
+	--default-radius: 10px;
+	--default-margin: 12px;
+}
+/* VARIABLES */
+/* ================================ RESET ================================ */
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1024px;
+    min-width: 900px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+/* ================================ CLASES REUTILIZABLES ================================ */
+.w100{
+    width: 100%;
+}
+
+.w30{
+    width: 30%;
+    margin: 0px;
+    padding: 8px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ================================ HEADER ================================ */
+
+header{
+    position:relative;
+}
+
+.header-top{
+    background-color: var(--primary-light-color);
+    margin-bottom: 42px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -30px;
+    margin: 0 var(--default-margin);
+    width: 97.5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    padding:4px;
+    margin-right: 20px;
+    color: var(--gray); 
+    list-style: none;
+}
+
+nav ul li:hover{
+    color: white;
+    cursor:pointer;
+}
+
+nav ul li:hover .line{
+    width: 100%;
+}
+
+.line{
+    width:0;
+    height: 2px;
+    background-color: white;
+    transition: .2s;
+}
+
+.active{
+    color: white;
+    font-weight: 900;
+}
+
+.active .line{
+    color:white;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.search-container{
+    width: 30%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.search-text{
+    border: 2px solid var(--gray);
+    padding: 8px;
+    border-radius: var(--default-radius);
+    outline:none;
+    font-weight: 500;
+    width: 80%;
+}
+
+.search-text:focus{
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 4px var(--accent-light-color);
+}
+
+.btn-search{
+    width: 18%;
+    padding: 8px;
+    margin: 0 8px 0 8px;
+    border: none;
+    outline: none;
+    background-color: var(--accent-color);
+    color:white;
+    border-radius: var(--default-radius);
+    cursor:pointer;
+}
+
+.btn-search:hover{
+background-color: var(--accent-light-color);
+}
+
+/*=============================== SECCIONES  ==============================*/ 
+
+.slide{
+    clip-path: circle(100% at 100%);
+    transition: .4s 0s;
+}
+
+.slide:hover{
+    transition-delay: 0.2s;
+    clip-path: circle(135% at 100%);
+}
+
+.btn-primary{
+    outline: none;
+    border:none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--default-radius);
+    padding: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-primary:hover{
+    filter: brightness(1.1);
+}
+
+.card{
+    padding:12px;
+    width: 32%;
+    border-radius: var(--default-radius);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(15px);
+    transition: .3s;
+    position: relative;
+
+}
+
+.card:hover{
+    transform:unset;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2, .card h1 {
+	text-align: center;
+}
+
+.card p{
+    text-align: justify;
+    padding: 6px;
+    margin-bottom: calc(var(--default-margin)*3);
+}
+
+video{
+    width:100%;
+    border-radius: var(--default-radius);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
