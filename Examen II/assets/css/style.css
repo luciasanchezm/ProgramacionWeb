@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --pink: #D45665;
+    --yellow: #FFDE02;
+    --blue-light: #E5F3F2;
+    --blue: rgb(150,211,208);
+    --green: #CAD851;
+    --gray-light: #A7A7A7;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    width: 1200px;
+}
+
+hr {
+    height: 8px;
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+body hr:nth-of-type(1) {
+    background-color: var(--pink);
+}
+
+body hr:nth-of-type(2) {
+    background-color: var(--green);
+}
+
+header {
+    text-align: center;
+}
+
+header nav {
+    width: 100%;
+    background-color: var(--yellow);
+    font-size: 12px;
+}
+
+header nav ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    font-family: 'Noto Sans', sans-serif;
+    display: inline-block;
+    margin: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+header nav ul li:hover {
+    font-weight: 800;
+}
+
+header nav button {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #000;
+    color: #FFF;
+    border: none;
+    padding: 4px 20px;
+    margin: 4px 16px;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+}
+
+footer hr {
+    height: 1px;
+    margin: 0;
+    background-color: var(--green);
+    border: none;
+}
+
+footer div {
+    margin: 16px 0
+}
+
+footer div img {
+    height: 32px;
+    margin: 0 80px;
+}
+
+footer p {
+    font-family: 'Noto Serif', serif;
+    font-size: 8px;
+    margin: 2px;
+}
+
+footer p a {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.flex {
+    display: flex;
+}
+
+.width40 {
+    width: 40%;
+}
+
+.width60 {
+    width: 60%;
+}
+
+.section1 {
+    padding: 32px;
+}
+
+.section1 article div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.section1 a {
+    font-weight: 500;
+}
+
+.principal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+
+.principal span {
+    font-family: 'Noto Serif', serif;
+    font-size: 8px !important;
+    font-style: italic;
+    color: var(--gray-light);
+    text-align: center;
+    width: 60px;
+    position: absolute;
+    bottom: -20px;
+    right: 280px;
+}
+
+.container {
+    padding: 0 64px 0 64px;
+    text-align: center;
+}
+
+.container h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: start;
+}
+
+.container p {
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    text-align: start;
+    margin: 16px 0 32px 0;
+}
+
+.container a {
+    color: var(--pink);
+    margin: 32px 0;
+    font-size: 16px;
+}
+
+.section2 {
+    padding: 32px 0;
+}
+
+.section2 article {
+    text-align: center;
+}
+
+.section2 article h3 {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+
+.section2 article h6 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
+    color: var(--gray-light)
+}
